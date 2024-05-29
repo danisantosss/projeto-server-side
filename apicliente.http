@@ -1,0 +1,31 @@
+GET http://localhost:3000/jogador HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:3000/jogador HTTP/1.1
+Content-Type: application/json
+
+{
+    "codigo_jogador": "1",
+    "nome_jogador": "Daniel",
+    "habilidade_principal": "Velocidade"
+
+}
+
+###
+PUT http://localhost:3000/jogador/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "codigo_jogador": "1",
+    "nome_jogador": "Daniel",
+    "habilidade_principal": "Força"
+}
+
+###
+DELETE http://localhost:3000/jogador/1 HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:3000/jogador/Daniel HTTP/1.1
+Content-Type: application/json
